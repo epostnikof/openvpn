@@ -6,7 +6,8 @@ read username
 #Создадим сертификат клиента
 cd /etc/openvpn/easy-rsa
 sudo ./easyrsa build-client-full $username nopass
-cd /home/ubuntu/
+mkdir /etc/openvpn/clients 2>/dev/null #в этом месте создаётся папка для клиента
+cd /etc/openvpn/clients # переходим в эту папку
 #Создаём папку клиента в домашней директории
 mkdir ./$username
 #Копируем сертификаты
