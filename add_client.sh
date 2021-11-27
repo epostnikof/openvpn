@@ -20,7 +20,7 @@ touch ./$username/$username.conf
 echo "client" >> ./$username/$username.conf
 echo "dev tun" >> ./$username/$username.conf
 echo "proto udp" >> ./$username/$username.conf
-echo "remote 18.196.4.122 1194" >> ./$username/$username.conf # при изменении адреса vpn сервера этот параметр нужно изменить
+echo "remote basist37.pp.ua 1194" >> ./$username/$username.conf # при изменении адреса vpn сервера этот параметр нужно изменить
 echo "resolv-retry infinite" >> ./$username/$username.conf
 echo "persist-key" >> ./$username/$username.conf
 echo "persist-tun" >> ./$username/$username.conf
